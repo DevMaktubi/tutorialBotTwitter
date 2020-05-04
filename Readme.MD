@@ -350,4 +350,9 @@ git push Bot master
 
 ![](assetsMD/Pt31.png)
 
+# E é isso amigos, se você fez tudo certo, seu bot já está rodando e você pode verificar no twitter!
+# Meu contato:
+## [LinkedIn](https://www.linkedin.com/in/breno-luiz-peres-de-oliveira-836aaa170/)
+## [Github](https://github.com/DevMaktubi)
+
 
