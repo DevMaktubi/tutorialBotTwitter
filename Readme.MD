@@ -248,6 +248,12 @@ function action(event){
        // Caso as condições não sejam atendidas, retornar a função vazia, indo para o próximo tweet
      }
 }
+var stream = Tweet.stream('statuses/filter', {track: 'bot'}) 
+// Aqui dizemos para o programa verificar em modo streaming
+stream.on('data', action) 
+// Ao receber as informações (`data`), passar elas para a função action e chamar a mesma.
+stream.on('error', erro => console.log("Erro: "+ erro)) 
+// Caso haja algum erro, jogar o erro no console para verificarmos.
 ```
 
 ## Finalizamos o código do bot, agora vamos para a terceira e última parte desse tutorial: O deploy no Heroku
@@ -332,10 +338,16 @@ git push Bot master
 
 ![](assetsMD/Pt28.png)
 
-## Por último, voltamos para a aba "Deploy", e vamos em "Manual deploy", clique no botão "Deploy Branch" e apenas aguarde o Heroku adicionar as dependências e configurações adicionais.
+## Volte para a aba "Deploy", e vamos em "Manual deploy", clique no botão "Deploy Branch" e apenas aguarde o Heroku adicionar as dependências e configurações adicionais.
 
 ![](assetsMD/Pt29.png)
 
+## Após o Heroku terminar de adicionar as dependências, vá para a Aba "Overview", e clique em "Configure Dynos"
 
+![](assetsMD/Pt30.png)
+
+## Por último, Clique em editar a primeira opção, desmarque e confirme, edite a segunda, marque ela e confirme. Exemplo de como deve ficar no final:
+
+![](assetsMD/Pt31.png)
 
 
