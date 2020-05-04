@@ -288,7 +288,9 @@ worker: node server.js
 git add .
 git commit -m "Meu primeiro bot de twitter"
 git remote add Bot {seu link copiado}
+git push Bot master
 ```
+## Após se autenticar e terminar o push, seu repositório deve estar no link já, tente atualizar a página e se deu tudo certo seus arquivos estarão lá.
 
 
 
