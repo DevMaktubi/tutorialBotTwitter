@@ -292,5 +292,50 @@ git push Bot master
 ```
 ## Após se autenticar e terminar o push, seu repositório deve estar no link já, tente atualizar a página e se deu tudo certo seus arquivos estarão lá.
 
+## Se tudo deu certo, vamos agora criar o app no Heroku, onde ele ficará hosteado e rodando 24/7
+### Primeiro, crie uma conta no Heroku
+[HerokuSignUp](https://signup.heroku.com/)
+
+## Após criar a conta e verificar seu email, vamos criar o app.
+[HerokuNewApp](https://dashboard.heroku.com/new-app)
+
+![](assetsMD/Pt20.png)
+## Decida um nome para o seu bot (deve ser todo em caixa baixa) e crie o App
+
+## Agora em "Deploy" e "Deployment method" clique em GitHub e logo abaixo conecte-se com sua conta do GitHub:
+
+![](assetsMD/Pt21.png)
+
+## Então, depois de se conectar, procure pelo nome do seu repositório e clique em connect, logo abaixo:
+
+![](assetsMD/Pt22.png)
+
+## Em seguida, marque a opção de Deploys automáticos, para cada vez que decidir dar outro deploy no seu repositório, automaticamente atualize o Heroku também:
+
+![](assetsMD/Pt23.png)
+
+## Agora vá para a opção "Settings" na parte superior:
+
+![](assetsMD/Pt24.png)
+
+## Desça para "Config Vars" e clique em "Reveal Config Vars":
+
+![](assetsMD/Pt25.png)
+
+## Então, está na hora de adicionar novamente as variáveis de ambiente com as chaves de acesso do seu bot, você deve adicionar as 4. Exemplo de como deve ficar: 
+
+![](assetsMD/Pt27.png)
+
+## Lembrando que é *muito* importante que os nomes das variáveis sejam os mesmos das que você colocou no arquivo .env, se forem diferentes, não vai funcionar.
+
+## Agora, vá em 'Buildpacks' e em "Add buildpack", marque a opção `nodejs` e clique em save changes.
+
+![](assetsMD/Pt28.png)
+
+## Por último, voltamos para a aba "Deploy", e vamos em "Manual deploy", clique no botão "Deploy Branch" e apenas aguarde o Heroku adicionar as dependências e configurações adicionais.
+
+![](assetsMD/Pt29.png)
+
+
 
 
