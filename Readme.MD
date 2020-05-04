@@ -193,7 +193,7 @@ var stream = Tweet.stream('statuses/filter', {track: 'bot'})
 // Aqui dizemos para o programa verificar em modo streaming
 ```
 
-#### todos os tweets no momento que são postados, e na variável `track` decidimos que palavra estamos procurando, nesse exemplo estou usando a palavra 'bot', lembrando que é essencial que a palavra esteja entre aspas, ou o programa não vai entender.
+#### Na variável `track` decidimos que palavra estamos procurando, nesse exemplo estou usando a palavra 'bot', lembrando que é essencial que a palavra esteja entre aspas, ou o programa não vai entender.
 
 ### Agora, para terminar nosso código, vamos apenas dizer para o programa o que fazer quando receber informações dos tweets, e o que fazer se tiver algum erro.
 
