@@ -60,7 +60,7 @@ yarn add nodemon -D
 ### Antes de tudo criamos um arquivo para armazenar nossas variáveis de ambiente, para proteger nossas chaves de acesso na hora de darmos deploy no GitHub e no Heroku. Crie um arquivo e nomeie ele como '.env', ele deverá ficar dessa maneira:
 >Essa é a hora que você pega as chaves de acesso que eu pedi pra você guardar, e completa os campos com as *suas* chaves.
 
-![](assetsMd/Pt15.png)
+![](assetsMD/Pt15.png)
  
 
 ### Depois, criamos nosso arquivo `server.js`, e chamamos a configuração das variáveis de ambiente para autenticar nossa lib
